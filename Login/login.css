@@ -1,0 +1,25 @@
+body{
+    background: rgba(153, 204, 255, 0.4);
+}
+
+.login-page{
+    width: 500px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.form{
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 500px;
+    margin: 0 auto 100px;
+    text-align: center;
+    padding: 45px;
+    /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.form input{
+    /*font-family: "Microsoft Sans Serif";*/
+    outline: #CCCCCC solid thin;
+
+}
