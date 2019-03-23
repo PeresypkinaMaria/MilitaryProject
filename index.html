@@ -1,37 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" charset="utf-8"> 
-	<title>Пример веб-страницы</title> 
-	<link rel="stylesheet" href="style.css"> 
-</head> 
-<body> 
-	<div id="wrapper"> 
-		<div id="header">
-				<div class="button">
-					<div id="index">
-					</div>			
-		</div> 
-		<div id="main">
-			<div id="menu">
-				<div class="button">
-					<div id="add_man">
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Главная</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__menu-icon"><span></span></div>
+				<div class="header__right-side">
+					<div class="header__find-icon">
+						<img src="./images/search.png" alt="" title="" />
+					</div>
+					<div class="header__enter-icon">
+						<img src="./images/cancel.png" alt="" title="" />
 					</div>
 				</div>
-				<div class="button">				
+			</header>
+			<aside class="aside">
+				<div class="aside__menu">
+					<ul>
+						<li class="border-top">
+							<div class="icon icon-man">
+								<img src="./images/man.png" alt="" title="" />
+							</div>
+							<div class="value">Добавить абитуриента</div>
+						</li>
+						<li>
+							<div class="icon icon-doc">
+								<img src="./images/doc.png" alt="" title="" />
+							</div>
+							<div class="value">Создать файл</div>
+						</li>
+						<li>
+							<div class="icon icon-search">
+								<img src="./images/search.png" alt="" title="" />
+							</div>
+							<div class="value">Поиск</div>
+						</li>
+						<li>
+							<div class="icon icon-look">
+								<img src="./images/look.png" alt="" title="" />
+							</div>
+							<div class="value">Просмотр</div>
+						</li>
+						<li>
+							<div class="icon icon-settings">
+								<img src="./images/set.png" alt="" title="" />
+							</div>
+							<div class="value">Настройки</div>
+						</li>
+						<li>
+							<div class="icon icon-exit">
+								<img src="./images/cancel.png" alt="" title="" />
+							</div>
+							<div class="value">Выход</div>
+						</li>
+					</ul>
 				</div>
-				<div class="button">				
+			</aside>
+			<aside class="aside-search">
+				<div class="aside-search__menu">
+					<ul>
+						<li class="border-top">
+							<div class="icon icon-triangle">
+								<img src="./images/icon-triangle.png" alt="" title="" />
+							</div>
+							<div class="value">Персональные данные</div>
+						</li>
+						<li>
+							<div class="icon icon-triangle">
+								<img src="./images/icon-triangle.png" alt="" title="" />
+							</div>
+							<div class="value">Образование</div>
+						</li>
+						<li>
+							<div class="icon icon-triangle">
+								<img src="./images/icon-triangle.png" alt="" title="" />
+							</div>
+							<div class="value">Семья</div>
+						</li>
+						<li>
+							<div class="icon icon-triangle">
+								<img src="./images/icon-triangle.png" alt="" title="" />
+							</div>
+							<div class="value">Военкомат</div>
+						</li>
+						<li>
+							<div class="icon icon-triangle">
+								<img src="./images/icon-triangle.png" alt="" title="" />
+							</div>
+							<div class="value">Дополнительно</div>
+						</li>
+						<li>
+							<div class="icon icon-triangle">
+								<img src="./images/icon-triangle.png" alt="" title="" />
+							</div>
+							<div class="value">Внутренние экзамены</div>
+						</li>
+						<li>
+							<div class="icon icon-triangle">
+								<img src="./images/icon-triangle.png" alt="" title="" />
+							</div>
+							<div class="value">Документы и файлы</div>
+						</li>
+					</ul>
 				</div>
-				<div class="button">				
-				</div>
-				<div class="button">				
-				</div>
-				<div class="button">				
+			</aside>
+			<div class="main">
+				<div class="content">
+					<div class="main-form">
+						<div class="main-form__tabs">
+							<ul>
+								<li>
+									<a href="#tab1" class="main-form__tab-link active">Персональные данные</a>
+								</li>
+								<li>
+									<a href="#tab2" class="main-form__tab-link">Образование</a>
+								</li>
+								<li>
+									<a href="#tab3" class="main-form__tab-link">Семья</a>
+								</li>
+								<li>
+									<a href="#tab4" class="main-form__tab-link">Военкомат и военная служба</a>
+								</li>
+								<li>
+									<a href="#tab5" class="main-form__tab-link">Дополнительно</a>
+								</li>
+								<li>
+									<a href="#tab6" class="main-form__tab-link">Внутренние экзамены</a>
+								</li>
+								<li>
+									<a href="#tab7" class="main-form__tab-link">Документы и&nbsp;файлы</a>
+								</li>
+							</ul>
+						</div>
+						<div class="main-form__for">
+							<div class="main-form__tab-item active" id="tab1">
+								<h1>Персональные данные</h1>
+								<p>Тут код форм персональных данных</p>
+							</div>
+							<div class="main-form__tab-item" id="tab2">
+								<h1>Образование</h1>
+								<p>Тут код форм образования</p>
+							</div>
+							<div class="main-form__tab-item" id="tab3">
+								<h1>Семья</h1>
+								<p>Тут код форм семьи</p>
+							</div>
+							<div class="main-form__tab-item" id="tab4">
+								<h1>Военкомат и военная служба</h1>
+								<p>Тут код форм военной службы</p>
+							</div>
+							<div class="main-form__tab-item" id="tab5">
+								<h1>Дополнительно</h1>
+								<p>Тут код форм дополнительной вкладки</p>
+							</div>
+							<div class="main-form__tab-item" id="tab6">
+								<h1>Внутренние экзамены</h1>
+								<p>Тут код форм внутренних экзаменов</p>
+							</div>
+							<div class="main-form__tab-item" id="tab7">
+								<h1>Документы и файлы</h1>
+								<p>Тут код форм документов и файлов</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div id="content"> 
-			</div> 
 		</div>
-	</div> 
-</body> 
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
 </html>
