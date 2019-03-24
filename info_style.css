@@ -19,9 +19,6 @@ body {
     width:100%;
 }
 
-.main-form{
-    width: 100%;
-}
 .main-form__tabs{
     width:100%;
 }
@@ -52,9 +49,73 @@ body {
     background: rgba(153, 204, 255, .3);
 }
 .main-form__tab-item{
-    padding:20px;
     display: none;
 }
 .main-form__tab-item.active{
     display: block;
+}
+
+.main-form__for{
+}
+
+     /*свойства для первого элемента на странице*/
+    .field_1{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        margin: 20px 15px 10px;
+    }
+
+    .field_1 p{
+        font-size: 14px;
+        padding-right: 15px;
+        text-align: left;
+    }
+
+    .field_1 input{
+        padding-left: 10px;
+    }
+
+.field{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 15px 10px;
+    min-width: 50px;
+    min-height: 15px;
+}
+
+.field p{
+    font-size: 14px;
+    padding-right: 15px;
+    text-align: left;
+
+}
+
+.field input{
+    padding-left: 10px;
+
+}
+
+.field select{
+
+}
+
+hr{
+    width: 99.9%;
+    height: 10px;
+    color: #000000;
+    border: none;
+    margin: 0;
+    background: white;
+}
+
+h2{
+    margin: 10px 15px;
+}
+
+.near_field{
+    margin-left: 100px;
 }

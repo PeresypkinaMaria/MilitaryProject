@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link href = "info_style.css" rel = "stylesheet">
 </head>
 <body>
-<div class="main">
-    <div class="content">
-        <div class="main-form">
+    <div class="main">
+        <div class="content">
             <div class="main-form__tabs">
                 <ul>
                     <li>
@@ -21,7 +22,7 @@
                         <a href="#tab3" class="main-form__tab-link">Семья</a>
                     </li>
                     <li>
-                        <a href="#tab4" class="main-form__tab-link">Военкомат и военная служба</a>
+                        <a href="#tab4" class="main-form__tab-link">Военкомат и&nbsp;военная служба</a>
                     </li>
                     <li>
                         <a href="#tab5" class="main-form__tab-link">Дополнительно</a>
@@ -30,14 +31,114 @@
                         <a href="#tab6" class="main-form__tab-link">Внутренние экзамены</a>
                     </li>
                     <li>
-                        <a href="#tab7" class="main-form__tab-link">Документы и&nbsp;файлы</a>
+                        <a href="#tab7" class="main-form__tab-link">Документы и&nbsp&nbsp;файлы</a>
                     </li>
                 </ul>
             </div>
             <div class="main-form__for">
                 <div class="main-form__tab-item active" id="tab1">
-                    <h1>Персональные данные</h1>
-                    <p>Тут код форм персональных данных</p>
+                    <div class="field_1">
+                        <p>№ личного дела</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Фамилия</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Имя</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Отчество</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Дата рождения</p>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <p>Пол</p>
+                        <select name="sex">
+                            <option value="male">мужской</option>
+                            <option value="female">женский</option>
+                        </select>
+                        <p class="near_field">Национальность</p>
+                        <select name="nationality">
+                        </select>
+                    </div>
+                    <div><hr></div>
+                    <div>
+                        <h2>Паспорт</h2>
+                    </div>
+                    <div class="field">
+                        <p>Серия</p>
+                        <input type="text">
+                        <p class="near_field">Номер</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Код подразделения</p>
+                        <input type="text">
+                        <p class="near_field">Дата выдачи</p>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <p>Кем выдан</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Место рождения</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Место жительства</p>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <p>Наличие заграничного паспорта</p>
+                        <input type="checkbox">
+                    </div>
+                    <div><hr></div>
+                    <div class="field">
+                        <p>Допуск к ССГТ</p>
+                        <select name="SSGT">
+                            <option value="1">1 форма</option>
+                            <option value="2">2 форма</option>
+                            <option value="3">3 форма</option>
+                        </select>
+                        <p class="near_field">Карта ППО</p>
+                        <select name="PPO">
+                            <option value="1">1 группа</option>
+                            <option value="2">2 группа</option>
+                            <option value="3">3 группа</option>
+                            <option value="4">4 группа</option>
+                        </select>
+                        <p class="near_field">Справка из МВД</p>
+                        <select name="MVD">
+                            <option value="no">нет</option>
+                            <option value="administrative">административная</option>
+                            <option value="criminal">уголовная</option>
+                        </select>
+                        <p class="near_field">Наличие медицинской карты</p>
+                        <input type="checkbox">
+                    </div>
+                    <div><hr></div>
+                    <div>
+                        <h2>Заявление на специальность</h2>
+                    </div>
+                    <div class="field">
+                        <p>1.</p>
+                        <select name="1"></select>
+                    </div>
+                    <div class="field">
+                        <p>2.</p>
+                        <select name="2"></select>
+                    </div>
+                    <div class="field">
+                        <p>3.</p>
+                        <select name="3"></select>
+                    </div>
                 </div>
                 <div class="main-form__tab-item" id="tab2">
                     <h1>Образование</h1>
@@ -66,6 +167,6 @@
             </div>
         </div>
     </div>
-</div>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
