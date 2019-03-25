@@ -8,81 +8,64 @@ body {
     font-family: sans-serif;
 }
 
-.main{
-    display: flex;
-    width:100%;
-    height: 100vh;
-    box-sizing: border-box;
-}
-
-.content{
-    width:100%;
-}
-
 .main-form__tabs{
+    position: fixed;
+    top:0;
+    left:0;
     width:100%;
+    height:50px;
 }
+
 .main-form__tabs ul{
     display: flex;
     flex-direction: row;
     width:100%;
+    height:100%;
 }
+
 .main-form__tabs li{
     list-style: none;
     width: 100%;
 }
+
 .main-form__tab-link{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     background: rgba(102, 153, 204, .7);
-    padding: 5px 10px;
     text-align: center;
     color:#000;
     text-decoration: none;
 }
+
 .main-form__tab-link.active,
 .main-form__tab-link:active,
 .main-form__tab-link:focus,
 .main-form__tab-link:hover{
     background: rgba(153, 204, 255, .3);
 }
+
+.main-form__for{
+    margin-top:50px;
+    width:100%;
+    height:calc(100vh - 100px);
+}
+
 .main-form__tab-item{
     display: none;
+    height:calc(100vh - 100px);
 }
 .main-form__tab-item.active{
     display: block;
 }
-
-.main-form__for{
-}
-
-     /*свойства для первого элемента на странице*/
-    .field_1{
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        margin: 20px 15px 10px;
-    }
-
-    .field_1 p{
-        font-size: 14px;
-        padding-right: 15px;
-        text-align: left;
-    }
-
-    .field_1 input{
-        padding-left: 10px;
-    }
 
 .field{
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    margin: 10px 15px 10px;
+    padding: 10px 15px 0;
     min-width: 50px;
     min-height: 15px;
 }
@@ -91,7 +74,6 @@ body {
     font-size: 14px;
     padding-right: 15px;
     text-align: left;
-
 }
 
 .field input{
@@ -99,16 +81,12 @@ body {
 
 }
 
-.field select{
-
-}
-
 hr{
-    width: 99.9%;
+    width: 100%;
     height: 10px;
     color: #000000;
     border: none;
-    margin: 0;
+    margin-top: 10px;
     background: white;
 }
 

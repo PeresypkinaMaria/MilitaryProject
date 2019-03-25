@@ -2,9 +2,7 @@
 	padding:0;
 	margin:0;
 }
-li{
-	list-style: none;
-}
+
 body{
 	font-size: 18px;
 	font-family: sans-serif;
@@ -18,14 +16,14 @@ body{
 	float: left;
 	width: 290px;
 	background: rgba(153, 204, 255, .3);
-	height: calc(100vh - 51px);
+	height: calc(100vh - 50px);
 }
 
 .information{
 	display: inline-block;
 	float: left;
 	width: calc(100% - 350px);
-	height: calc(100vh - 54px);
+	height: calc(100vh - 50px);
 	padding-top: 50px;
 }
 
