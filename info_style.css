@@ -70,7 +70,7 @@ body {
     min-height: 15px;
 }
 
-.field p{
+.field label{
     font-size: 14px;
     padding-right: 15px;
     text-align: left;
@@ -96,4 +96,8 @@ h2{
 
 .near_field{
     margin-left: 100px;
+}
+
+select{
+    width: 120px;
 }

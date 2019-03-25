@@ -29,40 +29,40 @@
             <a href="#tab6" class="main-form__tab-link">Внутренние экзамены</a>
         </li>
         <li>
-            <a href="#tab7" class="main-form__tab-link">Документы и&nbsp&nbsp;файлы</a>
+            <a href="#tab7" class="main-form__tab-link">Документы и&nbsp;файлы</a>
         </li>
     </ul>
 </div>
 <div class="main-form__for">
     <div class="main-form__tab-item active" id="tab1">
         <div class="field">
-            <p>№ личного дела</p>
-            <input type="text">
+            <label for="num_of_personal_file">№ личного дела</label>
+            <input type="text" name="num_of_personal_file" id="num_of_personal_file">
         </div>
         <div class="field">
-            <p>Фамилия</p>
-            <input type="text">
+            <label for="surname">Фамилия</label>
+            <input type="text" name="surname" id="surname">
         </div>
         <div class="field">
-            <p>Имя</p>
-            <input type="text">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name">
         </div>
         <div class="field">
-            <p>Отчество</p>
-            <input type="text">
+            <label for="patronymic">Отчество</label>
+            <input type="text" name="patronymic" id="patronymic">
         </div>
         <div class="field">
-            <p>Дата рождения</p>
-            <input type="date">
+            <label for="date_of_birth">Дата рождения</label>
+            <input type="date" name="date_of_birth" id="date_of_birth">
         </div>
         <div class="field">
-            <p>Пол</p>
-            <select name="sex">
-                <option value="male">мужской</option>
-                <option value="female">женский</option>
+            <label for="name_sex">Пол</label>
+            <select name="name_sex" id="name_sex">
+                <option value="0"></option>
             </select>
-            <p class="near_field">Национальность</p>
-            <select name="nationality">
+            <label class="near_field" for="nationality">Национальность</label>
+            <select name="nationality" id="nationality">
+                <option value="0"></option>
             </select>
         </div>
         <div><hr></div>
@@ -70,72 +70,72 @@
             <h2>Паспорт</h2>
         </div>
         <div class="field">
-            <p>Серия</p>
-            <input type="text">
-            <p class="near_field">Номер</p>
+            <label for="passport_series">Серия</label>
+            <input type="text" name="passport_series" id="passport_series">
+            <label class="near_field" for="passport_number">Номер</label>
+            <input type="text" name="passport_number" id="passport_number">
+        </div>
+        <div class="field">
+            <label for="passport_unit_code">Код подразделения</label>
+            <input type="text" name="passport_unit_code" id="passport_unit_code">
+            <label class="near_field" for="passport_issue_date">Дата выдачи</label>
+            <input type="date" name="passport_issue_date" id="passport_issue_date">
+        </div>
+        <div class="field">
+            <label for="passport_issued_by">Кем выдан</label>
+            <input type="text" name="passport_issued_by" id="passport_issued_by">
+        </div>
+        <div class="field">
+            <label for="place_of_birth">Место рождения</label>
+            <input type="text" name="place_of_birth" id="place_of_birth">
+        </div>
+        <div class="field">
+            <!--тут нет имени и id для поля-->
+            <label>Место жительства</label>
             <input type="text">
         </div>
         <div class="field">
-            <p>Код подразделения</p>
-            <input type="text">
-            <p class="near_field">Дата выдачи</p>
-            <input type="date">
-        </div>
-        <div class="field">
-            <p>Кем выдан</p>
-            <input type="text">
-        </div>
-        <div class="field">
-            <p>Место рождения</p>
-            <input type="text">
-        </div>
-        <div class="field">
-            <p>Место жительства</p>
-            <input type="text">
-        </div>
-        <div class="field">
-            <p>Наличие заграничного паспорта</p>
-            <input type="checkbox">
+            <label for="international_passport">Наличие заграничного паспорта</label>
+            <input type="checkbox" name="international_passport" id="international_passport">
         </div>
         <div><hr></div>
         <div class="field">
-            <p>Допуск к ССГТ</p>
-            <select name="SSGT">
-                <option value="1">1 форма</option>
-                <option value="2">2 форма</option>
-                <option value="3">3 форма</option>
+            <label for="admit_SSGT">Допуск к&nbsp;ССГТ</label>
+            <select name="admit_SSGT" id="admit_SSGT">
+                <option value="0"></option>
             </select>
-            <p class="near_field">Карта ППО</p>
-            <select name="PPO">
-                <option value="1">1 группа</option>
-                <option value="2">2 группа</option>
-                <option value="3">3 группа</option>
-                <option value="4">4 группа</option>
+            <label class="near_field" for="card_PPO">Карта ППО</label>
+            <select name="card_PPO" id="card_PPO">
+                <option value="0"></option>
             </select>
-            <p class="near_field">Справка из МВД</p>
-            <select name="MVD">
-                <option value="no">нет</option>
-                <option value="administrative">административная</option>
-                <option value="criminal">уголовная</option>
+            <label class="near_field" for="name_fact_of_prosecution">Справка из МВД</label>
+            <select name="name_fact_of_prosecution" id="name_fact_of_prosecution">
+                <option value="0"></option>
             </select>
-            <p class="near_field">Наличие медицинской карты</p>
-            <input type="checkbox">
+            <label class="near_field" for="name_document">Наличие медицинской карты</label>
+            <input type="checkbox" name="name_document" id="name_document">
         </div>
         <div><hr></div>
         <div>
             <h2>Заявление на специальность</h2>
         </div>
         <div class="field">
-            <p>1.</p>
-            <select name="1"></select>
+            <label for="name_speciality_1">1.</label>
+            <select name="name_speciality" id="name_speciality_1">
+                <option value="0"></option>
+            </select>
         </div>
         <div class="field">
-            <p>2.</p>
-            <select name="2"></select>
+            <label for="name_speciality_2">2.</label>
+            <select name="name_speciality" id="name_speciality_2">
+                <option value="0"></option>
+            </select>
         </div>
         <div class="field">
-            <p>3.</p>
-            <select name="3"></select>
+            <label for="name_speciality_3">3.</label>
+            <select name="name_speciality" id="name_speciality_3">
+                <option value="0"></option>
+            </select>
         </div>
     </div>
     <div class="main-form__tab-item" id="tab2">
