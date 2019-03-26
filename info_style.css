@@ -78,6 +78,27 @@ body {
 
 .field input{
     padding-left: 10px;
+}
+
+.subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 15px 0;
+    min-width: 50px;
+    min-height: 15px;
+}
+
+.subject label{
+    font-size: 14px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.subject input{
+    padding-left: 10px;
+	width: 30px;
 
 }
 
