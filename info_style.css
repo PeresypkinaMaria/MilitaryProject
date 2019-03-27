@@ -72,7 +72,7 @@ body {
 
 .field label{
     font-size: 14px;
-    padding-right: 15px;
+    padding-right: 7px;
     text-align: right;
 }
 
@@ -84,6 +84,27 @@ body {
 	width: 126px;
 }
 
+.family label {
+	width: 220px;
+}
+
+.parents label {
+	width: 138px;
+}
+
+.parents input, .military input, .military_mid input {
+	width: 300px;
+}
+
+.military label {
+	width: 165px;
+}
+.military_mid label {
+	width: 193px;
+}
+input {
+margin-right: 5px;
+}
 .subject{
     display: flex;
     flex-direction: row;
@@ -96,7 +117,7 @@ body {
 
 .subject label{
     font-size: 14px;
-    padding-right: 15px;
+    padding-right: 7px;
     text-align: right;
 	width: 106px;
 }
@@ -121,11 +142,11 @@ hr{
 }
 
 h2{
-    margin: 10px 15px;
+    padding: 10px 10px 0px 10px;
 }
 
 .near_field{
-    margin-left: 100px;
+    margin-left: 25px;
 }
 
 select{
