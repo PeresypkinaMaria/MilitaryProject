@@ -73,14 +73,14 @@ body {
 .field label{
     font-size: 14px;
     padding-right: 15px;
-    text-align: left;
+    text-align: right;
 }
 
 .field input{
     padding-left: 10px;
 }
 
-.other label{
+.pers_ed label{
 	width: 126px;
 }
 
@@ -97,7 +97,7 @@ body {
 .subject label{
     font-size: 14px;
     padding-right: 15px;
-    text-align: left;
+    text-align: right;
 	width: 106px;
 }
 
@@ -107,13 +107,8 @@ body {
 
 }
 
-<<<<<<< HEAD
 .col_2 {
 	margin-left: 30%;
-=======
-.exam{
-    width: 30px;
->>>>>>> b6e7b2d6677cb80fe5b76ac97ea60fec0c6250b7
 }
 
 hr{
@@ -121,12 +116,12 @@ hr{
     height: 10px;
     color: #000000;
     border: none;
-    margin-top: 10px;
+    margin: 10px 0px;
     background: white;
 }
 
 h2{
-    padding: 10px 15px 0;
+    margin: 10px 15px;
 }
 
 .near_field{
@@ -135,9 +130,4 @@ h2{
 
 select{
     width: 120px;
-}
-
-.without_read{
-    border: none;
-    background: rgba(255,255,255,0);
 }
