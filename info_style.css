@@ -80,6 +80,10 @@ body {
     padding-left: 10px;
 }
 
+.other label{
+	width: 126px;
+}
+
 .subject{
     display: flex;
     flex-direction: row;
@@ -94,12 +98,17 @@ body {
     font-size: 14px;
     padding-right: 15px;
     text-align: left;
+	width: 106px;
 }
 
 .subject input{
     padding-left: 10px;
 	width: 30px;
 
+}
+
+.col_2 {
+	margin-left: 30%;
 }
 
 hr{
