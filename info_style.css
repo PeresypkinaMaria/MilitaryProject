@@ -107,8 +107,13 @@ body {
 
 }
 
+<<<<<<< HEAD
 .col_2 {
 	margin-left: 30%;
+=======
+.exam{
+    width: 30px;
+>>>>>>> b6e7b2d6677cb80fe5b76ac97ea60fec0c6250b7
 }
 
 hr{
@@ -121,7 +126,7 @@ hr{
 }
 
 h2{
-    margin: 10px 15px;
+    padding: 10px 15px 0;
 }
 
 .near_field{
@@ -130,4 +135,9 @@ h2{
 
 select{
     width: 120px;
+}
+
+.without_read{
+    border: none;
+    background: rgba(255,255,255,0);
 }
