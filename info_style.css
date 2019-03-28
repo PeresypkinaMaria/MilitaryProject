@@ -137,12 +137,12 @@ hr{
     height: 10px;
     color: #000000;
     border: none;
-    margin: 10px 0px;
+    margin: 10px 0 0;
     background: white;
 }
 
 h2{
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 0 10px;
 }
 
 .near_field{
