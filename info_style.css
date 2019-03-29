@@ -152,3 +152,12 @@ h2{
 select{
     width: 120px;
 }
+
+.break {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.first {
+    height: 30px;
+}
