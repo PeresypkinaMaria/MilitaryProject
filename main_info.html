@@ -60,8 +60,8 @@
             <select name="name_sex" id="name_sex">
                 <option value="0"></option>
             </select>
-            <label class="near_field pers_ed" for="nationality">Национальность</label>
-            <select name="nationality" id="nationality">
+            <label class="near_field pers_ed" for="name_nationality">Национальность</label>
+            <select name="name_nationality" id="name_nationality">
                 <option value="0"></option>
             </select>
         </div>
@@ -90,13 +90,13 @@
             <input type="text" name="place_of_birth" id="place_of_birth">
         </div>
         <div class="field pers_ed">
-            <!--тут нет имени и id для поля-->
-            <label>Место жительства</label>
-            <input type="text">
+            <!--здесь только имя города; не знаю, как подгрузить район и область-->
+            <label for="name_city">Место жительства</label>
+            <input type="text" name="name_city" id="name_city">
         </div>
         <div class="field">
-            <label for="international_passport">Наличие заграничного паспорта</label>
-            <input type="checkbox" name="international_passport" id="international_passport">
+            <label for="inteernational_passport">Наличие заграничного паспорта</label>
+            <input type="checkbox" name="inteernational_passport" id="inteernational_passport">
         </div>
         <div><hr></div>
         <div class="field">
@@ -112,6 +112,7 @@
             <select name="name_fact_of_prosecution" id="name_fact_of_prosecution">
                 <option value="0"></option>
             </select>
+            <!--название "наличие мед карты" из базы?-->
             <label class="near_field" for="name_document">Наличие медицинской карты</label>
             <input type="checkbox" name="name_document" id="name_document">
         </div>
@@ -140,83 +141,85 @@
     </div>
     <div class="main-form__tab-item" id="tab2">
         <div class="field pers_ed">
-            <label for="type_of_education">Тип образования</label>
-            <select name="type_of_education" id="type_of_education">
+            <label for="name_education_type">Тип образования</label>
+            <select name="name_education_type" id="name_education_type">
                 <option value="0"></option>
             </select>
         </div>
         <div class="field pers_ed">
-            <label for="name_of_ed">Название УЗ</label>
-            <input type="text" name="name_of_ed" id="name_of_ed">
+            <label for="name_education_institution">Название УЗ</label>
+            <input type="text" name="name_education_institution" id="name_education_institution">
+        </div>
+        <!--привязан только город; аналогично выше-->
+        <div class="field pers_ed">
+            <label for="inst_name_city">Адрес УЗ</label>
+            <input type="text" name="name_city" id="inst_name_city">
         </div>
         <div class="field pers_ed">
-            <label for="address_of_ed">Адрес УЗ</label>
-            <input type="text" name="address_of_ed" id="address_of_ed">
+            <label for="year_of_ending_education">Год выпуска</label>
+            <input type="date" name="year_of_ending_education" id="year_of_ending_education">
         </div>
         <div class="field pers_ed">
-            <label for="date_of_grad">Год выпуска</label>
-            <input type="date" name="date_of_grad" id="date_of_grad">
-        </div>
-        <div class="field pers_ed">
-            <label for="notes">Примечания</label>
-            <input type="text" name="notes" id="notes">
+            <label for="notes_educational_institution">Примечания</label>
+            <input type="text" name="notes_educational_institution" id="notes_educational_institution">
         </div>
 		<div><hr></div>
         <div>
             <h2>Оценки в документе о СОО/СПО</h2>
         </div>
+        <!--название предмета из базы?-->
 		<div class="subject">
             <label for="rus">Русский язык</label>
-            <input type="text" name="rus" id="rus">
+            <input type="text" name="mark" id="rus">
 		
             <label class = "col_2" for="obzh">ОБЖ</label>
-            <input type="text" name="obzh" id="obzh">
+            <input type="text" name="mark" id="obzh">
         </div>
 		<div class="subject">
             <label for="math">Математика</label>
-            <input type="text" name="math" id="math">
+            <input type="text" name="mark" id="math">
 			
             <label class = "col_2" for="bio">Биология</label>
-            <input type="text" name="bio" id="bio">
+            <input type="text" name="mark" id="bio">
         </div>
 		<div class="subject">
             <label for="alg">Алгебра</label>
-            <input type="text" name="alg" id="alg">
+            <input type="text" name="mark" id="alg">
 			
             <label class = "col_2" for="chem">Химия</label>
-            <input type="text" name="chem" id="chem">
+            <input type="text" name="mark" id="chem">
         </div>
 		<div class="subject">
             <label for="geom">Геометрия</label>
-            <input type="text" name="geom" id="geom">
+            <input type="text" name="mark" id="geom">
 			
             <label class = "col_2" for="hist">История</label>
-            <input type="text" name="hist" id="hist">
+            <input type="text" name="mark" id="hist">
         </div>
 		<div class="subject">
             <label for="phis">Физика</label>
-            <input type="text" name="phis" id="phis">
+            <input type="text" name="mark" id="phis">
 					
             <label class = "col_2" for="ob">Обществознание</label>
-            <input type="text" name="ob" id="ob">
+            <input type="text" name="mark" id="ob">
         </div>
 		<div class="subject">
             <label for="inf">Информатика</label>
-            <input type="text" name="inf" id="inf">
+            <input type="text" name="mark" id="inf">
 
             <label class = "col_2" for="lit">Литература</label>
-            <input type="text" name="lit" id="lit">
+            <input type="text" name="mark" id="lit">
         </div>
 		<div class="subject">
             <label for="geog">География</label>
-            <input type="text" name="geog" id="geog">
+            <input type="text" name="mark" id="geog">
 			
             <label class = "col_2" for="lang">Ин. язык</label>
-            <input type="text" name="lang" id="lang">
+            <input type="text" name="mark" id="lang">
         </div>
 		<div class="subject">
             <label for="phk">Физ. культура</label>
-            <input type="text" name="phk" id="phk">
+            <input type="text" name="mark" id="phk">
         </div>
     </div>
     <div class="main-form__tab-item" id="tab3">
@@ -227,8 +230,8 @@
             </select>
         </div>
         <div class="field family">
-            <label for="">Состав семьи</label>
-            <select name="" id="">
+            <label for="name_family_type">Состав семьи</label>
+            <select name="name_family_type" id="name_family_type">
                 <option value="0"></option>
             </select>
         </div>
@@ -253,24 +256,26 @@
             <h2>Родители/Опекуны</h2>
         </div>
         <div class="field parents">
-            <label for="">Кем является</label>
-            <select name="" id="">
+            <label for="name_parent_type">Кем является</label>
+            <select name="name_parent_type" id="name_parent_type">
                 <option value="0"></option>
             </select>
         </div>
+        <!--тут только фамилия; как в одно поле еще имя и отчество-->
         <div class="field parents">
-            <label for="">ФИО</label>
-            <input name="" id="">
+            <label for="parent_surname">ФИО</label>
+            <input name="surname" id="parent_surname">
         </div>
         <div class="field parents">
-            <label for="">Характеристика</label>
-            <select name="" id="">
+            <label for="name_social_status">Характеристика</label>
+            <select name="name_social_status" id="name_social_status">
                 <option value="0"></option>
             </select>
         </div>
+        <!--тут только город; аналогичная проблема выше-->
         <div class="field parents">
-            <label for="">Адрес проживания</label>
-            <input name="" id="">
+            <label for="parent_city">Адрес проживания</label>
+            <input name="name_city" id="parent_city">
         </div>
     </div>
     <div class="main-form__tab-item" id="tab4">
@@ -283,9 +288,10 @@
                 <option value="0"></option>
             </select>
         </div>
+        <!--тут только регион, тк вроде не требовался полный адрес-->
         <div class="field military">
-            <label for="">Регион</label>
-            <select name="" id="">
+            <label for="military_region">Регион</label>
+            <select name="name_region" id="military_region">
                 <option value="0"></option>
             </select>
         </div>
@@ -324,19 +330,21 @@
         <div>
             <h2>Войсковая часть</h2>
         </div>
+        <!--тут только район (так было в бд)-->
         <div class="field military">
-            <label for="">Дислокация</label>
-            <input type="text" name="" id="">
+            <label for="name_area_military">Дислокация</label>
+            <input type="text" name="name_area" id="name_area_military">
         </div>
         <div class="field military">
-            <label for="">Собственное название</label>
-            <input type="text" name="" id="">
+            <label for="name_military_unit">Собственное название</label>
+            <input type="text" name="name_military_unit" id="name_military_unit">
         </div>
     </div>
     <div class="main-form__tab-item" id="tab5">
         <div>
             <h2>Достижения</h2>
         </div>
+        <!--название из базы? как их загружать?-->
         <div class="field">
             <input type="checkbox" name="" id="">
             <label for="">Аттестат/Диплом с отличием</label>
@@ -383,35 +391,36 @@
         <div>
             <h2>Результаты вступительных испытаний</h2>
         </div>
+        <!--названия из базы? как прописать id?-->
         <div class="field pers_ed">
             <label for="">Физ. подготовка</label>
-            <input class="exam" type="text" name="" id="">
-            <input class="near_field" type="date" name="" id="">
-            <select class="near_field" name="" id="">
+            <input class="exam" type="text" name="exam_mark" id="">
+            <input class="near_field" type="date" name="date_of_passing_exam" id="">
+            <select class="near_field" name="name_test_type" id="">
                 <option value="0"></option>
             </select>
         </div>
         <div class="field pers_ed">
             <label for="">КЭ</label>
-            <input class="exam" type="text" name="" id="">
-            <input class="near_field" type="date" name="" id="">
-            <select class="near_field" name="" id="">
+            <input class="exam" type="text" name="exam_mark" id="">
+            <input class="near_field" type="date" name="date_of_passing_exam" id="">
+            <select class="near_field" name="name_test_type" id="">
                 <option value="0"></option>
             </select>
         </div>
         <div class="field pers_ed">
             <label for="">Русский язык</label>
-            <input class="exam" type="text" name="" id="">
-            <input class="near_field" type="date" name="" id="">
-            <select class="near_field" name="" id="">
+            <input class="exam" type="text" name="exam_mark" id="">
+            <input class="near_field" type="date" name="date_of_passing_exam" id="">
+            <select class="near_field" name="name_test_type" id="">
                 <option value="0"></option>
             </select>
         </div>
         <div class="field pers_ed">
             <label for="">Математика</label>
-            <input class="exam" type="text" name="" id="">
-            <input class="near_field" type="date" name="" id="">
-            <select class="near_field" name="" id="">
+            <input class="exam" type="text" name="exam_mark" id="">
+            <input class="near_field" type="date" name="date_of_passing_exam" id="">
+            <select class="near_field" name="name_test_type" id="">
                 <option value="0"></option>
             </select>
         </div>
@@ -427,6 +436,7 @@
         </div>
         <div><hr></div>
         <div class="field">
+            <!--названия из базы?-->
             <input type="checkbox" name="" id="">
             <label for="">Паспорт</label>
             <!--<input class="without_read" type="text" value="" readonly>-->
