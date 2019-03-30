@@ -201,6 +201,13 @@ ul {
     height: 100%;
 }
 
-.button {
-
+button {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 150px;
+    height: 35px;
+    background: #336699;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
 }
