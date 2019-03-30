@@ -95,6 +95,12 @@ body {
 .parents input, .military input, .military_mid input {
 	width: 300px;
 }
+#personal_number_MS {
+    width: 106px;
+}
+#notes_educational_institution, #other_notes, #name_military_office, #name_military_unit, #name_area_military {
+    width: 50%;
+}
 
 .military label {
 	width: 165px;
@@ -160,4 +166,37 @@ select{
 
 .first {
     height: 30px;
+}
+
+.brief label {
+    width: 113px;
+}
+.wid label {
+    width: 98px;
+}
+
+.bye .reasons {
+    visibility: hidden;
+}
+
+.bye.active .reasons {
+    visibility: visible;
+}
+.bye.active img {
+    transform: translateY(0px) rotate(91deg);
+}
+ul {
+    list-style-type: none;
+}
+.reasons li {
+    margin-top: 10px;
+    text-align: right;
+}
+.icon {
+    width: 15px;
+    height: 15px;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
 }
