@@ -8,31 +8,11 @@ body{
 	font-family: sans-serif;
 	background: rgba(153, 204, 255, .3);
 }
-
-.brief_info{
-	padding-left: 60px;
-	padding-top: 50px;
-	display: inline-block;
-	float: left;
-	width: 290px;
-	background: rgba(153, 204, 255, .3);
-	height: calc(100vh - 50px);
-}
-
-.information{
-	display: inline-block;
-	float: left;
-	width: calc(100% - 350px);
-	height: calc(100vh - 50px);
-	padding-top: 50px;
-}
-
-iframe{
+iframe {
 	border-width: 0;
 	width: 100%;
-	height:  calc(100vh - 54px);
+	height: calc(100vh - 50px);
 }
-
 .header{
 	position: fixed;
 	top:0;
@@ -185,10 +165,6 @@ iframe{
 .aside-search__menu .value{
 	padding:10px;
 	width:220px;
-}
-
-#brief {
-	border-right: 1px solid white;
 }
 
 

@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.brief_info{
+    margin-left: 60px;
+    margin-top: 50px;
+    display: inline-block;
+    float: left;
+    width: 290px;
+    background: rgba(153, 204, 255, .3);
+    height: calc(100vh - 50px);
+}
+
+.information{
+    display: inline-block;
+    float: left;
+    width: calc(100% - 350px);
+    height: calc(100vh - 50px);
+    padding-top: 50px;
+}
+
+iframe{
+    border-width: 0;
+    width: 100%;
+    height:  calc(100vh - 54px);
+}
+
+#brief {
+    border-right: 1px solid white;
+}
