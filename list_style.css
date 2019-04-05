@@ -17,20 +17,19 @@ table {
     text-align: center;
     border-collapse: collapse;
 }
-.col-1 {
-    width: 3%;
+
+.col-1, .col-3, .col-4, .col-6{
+    width: 8%;
 }
 
-.col-2, .col-4, .col-5, .col-7, .col-8 {
-    width: 10%;
+.col-2 {
+    width: 39%;
 }
-
-.col-3, .col-9 {
-    width: 20%;
+.col-8 {
+    width: 17%;
 }
-
-.col-6 {
-    width: 7%;
+.col-5, .col-7  {
+    width: 6%;
 }
 
 .row-1 {
@@ -44,5 +43,18 @@ td {
 }
 
 a{
-    padding-right: 10px;
+    padding-left: 5px;
+}
+
+button {
+    margin-top: 20px;
+    width: 45px;
+    height: 35px;
+    background: #336699;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+}
+#first {
+    margin-left: 42%;
 }

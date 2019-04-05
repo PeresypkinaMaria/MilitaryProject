@@ -6,4 +6,8 @@ document.querySelector(".header__menu-icon").onclick = function (){
 /* Открытие поиска */
 document.querySelector(".header__find-icon").onclick = function (){
 	document.querySelector(".aside-search").classList.toggle("active");
-};
+}
+
+document.querySelector(".icon-search").onclick = function (){
+    document.querySelector(".aside-search").classList.toggle("active");
+};;
