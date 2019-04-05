@@ -211,3 +211,9 @@ button {
     font-size: 16px;
     border-radius: 8px;
 }
+
+.save_cancel {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
