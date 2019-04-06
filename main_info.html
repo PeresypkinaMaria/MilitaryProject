@@ -82,20 +82,30 @@
         </div>
         <div class="field pers_ed">
             <label for="passport_issued_by">Кем выдан</label>
-            <input type="text" name="passport_issued_by" id="passport_issued_by">
+            <input class="big_field" type="text" name="passport_issued_by" id="passport_issued_by">
         </div>
         <div class="field pers_ed">
             <label for="place_of_birth">Место рождения</label>
-            <input type="text" name="place_of_birth" id="place_of_birth">
+            <input class="big_field" type="text" name="place_of_birth" id="place_of_birth">
+        </div>
+        <div>
+            <h3>Место жительства</h3>
         </div>
         <div class="field pers_ed">
-            <!--здесь только имя города; не знаю, как подгрузить район и область-->
-            <label for="name_city">Место жительства</label>
+            <label for="name_military_district">Военный округ</label>
+            <input type="text" name="name_military_district" id="name_military_district">
+            <label class="near_field" for="name_region">Регион</label>
+            <input type="text" name="name_region" id="name_region">
+        </div>
+        <div class="field pers_ed">
+            <label for="name_area">Район</label>
+            <input type="text" name="name_area" id="name_area">
+            <label class="near_field" name="name_city">Населенный пункт (город, село и т.п.)</label>
             <input type="text" name="name_city" id="name_city">
         </div>
         <div class="field break">
-            <label for="inteernational_passport">Наличие заграничного паспорта</label>
-            <input type="checkbox" name="inteernational_passport" id="inteernational_passport">
+            <label for="international_passport">Наличие заграничного паспорта</label>
+            <input type="checkbox" name="international_passport" id="international_passport">
         </div>
         <div class="field break">
             <label for="admit_SSGT">Допуск к&nbsp;ССГТ</label>
@@ -122,15 +132,11 @@
             <select name="name_speciality" id="name_speciality_1">
                 <option value="0"></option>
             </select>
-        </div>
-        <div class="field">
-            <label for="name_speciality_2">2.</label>
+            <label class="near_field" for="name_speciality_2">2.</label>
             <select name="name_speciality" id="name_speciality_2">
                 <option value="0"></option>
             </select>
-        </div>
-        <div class="field">
-            <label for="name_speciality_3">3.</label>
+            <label class="near_field" for="name_speciality_3">3.</label>
             <select name="name_speciality" id="name_speciality_3">
                 <option value="0"></option>
             </select>
@@ -294,17 +300,16 @@
             <h2>Военкомат</h2>
         </div>
         <div class="field military">
-            <label for="military_district">Военный округ</label>
-            <select name="military_district" id="military_district">
-                <option value="0"></option>
-            </select>
+            <label for="name_military_district_1">Военный округ</label>
+            <input type="text" name="name_military_district" id="name_military_district_1">
+            <label class="near_field" for="name_region_1">Регион</label>
+            <input type="text" name="name_region" id="name_region_1">
         </div>
-        <!--тут только регион, тк вроде не требовался полный адрес-->
         <div class="field military">
-            <label for="military_region">Регион</label>
-            <select name="name_region" id="military_region">
-                <option value="0"></option>
-            </select>
+            <label for="name_area_1">Район</label>
+            <input type="text" name="name_area" id="name_area_1">
+            <label class="near_field" name="name_city_1">Населенный пункт (город, село и т.п.)</label>
+            <input type="text" name="name_city" id="name_city_1">
         </div>
         <div class="field military">
             <label for="status">Статус военкомата</label>

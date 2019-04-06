@@ -56,6 +56,7 @@ body {
     display: none;
     height:calc(100vh - 100px);
 }
+
 .main-form__tab-item.active{
     display: block;
 }
@@ -95,9 +96,11 @@ body {
 .parents input, .military input, .military_mid input {
 	width: 300px;
 }
+
 #personal_number_MS {
     width: 106px;
 }
+
 #notes_educational_institution, #other_notes, #name_military_office, #name_military_unit, #name_area_military {
     width: 50%;
 }
@@ -105,12 +108,15 @@ body {
 .military label {
 	width: 165px;
 }
+
 .military_mid label {
 	width: 193px;
 }
+
 input {
-margin-right: 5px;
+    margin-right: 5px;
 }
+
 .subject{
     display: flex;
     flex-direction: row;
@@ -147,7 +153,7 @@ hr{
     background: white;
 }
 
-h2{
+h2, h3{
     padding: 10px 10px 0 10px;
 }
 
@@ -216,4 +222,8 @@ button {
     position: absolute;
     bottom: 10px;
     right: 20px;
+}
+
+.big_field{
+    width: 500px;
 }
