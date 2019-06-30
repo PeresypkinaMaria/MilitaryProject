@@ -10,9 +10,10 @@ body{
 }
 iframe {
 	border-width: 0;
-	margin-left: 60px;
+	/*margin-left: 60px;*/
 	margin-top: 50px;
-	width: calc(100% - 60px);
+	/*width: calc(100% - 60px);*/
+	width: 100%;
 	height: calc(100vh - 55px);
 }
 .header{
@@ -28,6 +29,21 @@ iframe {
 	padding-left: 15px;
 	box-sizing: border-box;
 }
+
+.logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	width: 60px;
+	height: 50px;
+}
+
+.logo img{
+	width: 30px;
+	height: 30px;
+}
+
 .header__menu-icon{
 	cursor: pointer;
 }
